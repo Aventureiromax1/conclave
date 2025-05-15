@@ -51,6 +51,7 @@
             this.BtnVotar.TabIndex = 1;
             this.BtnVotar.Text = "Votar";
             this.BtnVotar.UseVisualStyleBackColor = true;
+            this.BtnVotar.Click += new System.EventHandler(this.BtnVotar_Click);
             // 
             // BtnResults
             // 

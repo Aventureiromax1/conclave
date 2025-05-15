@@ -33,14 +33,13 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.dgvPapaveis = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPapaveis)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnAdd
             // 
-            this.BtnAdd.Location = new System.Drawing.Point(481, 169);
+            this.BtnAdd.Location = new System.Drawing.Point(519, 174);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(138, 30);
             this.BtnAdd.TabIndex = 0;
@@ -50,7 +49,7 @@
             // 
             // BtnRemove
             // 
-            this.BtnRemove.Location = new System.Drawing.Point(544, 300);
+            this.BtnRemove.Location = new System.Drawing.Point(553, 210);
             this.BtnRemove.Name = "BtnRemove";
             this.BtnRemove.Size = new System.Drawing.Size(75, 23);
             this.BtnRemove.TabIndex = 1;
@@ -79,19 +78,12 @@
             this.dgvPapaveis.AllowUserToDeleteRows = false;
             this.dgvPapaveis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPapaveis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
             this.nome});
             this.dgvPapaveis.Location = new System.Drawing.Point(12, 12);
             this.dgvPapaveis.Name = "dgvPapaveis";
             this.dgvPapaveis.ReadOnly = true;
             this.dgvPapaveis.Size = new System.Drawing.Size(444, 426);
             this.dgvPapaveis.TabIndex = 4;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
             // 
             // nome
             // 
@@ -125,7 +117,6 @@
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.DataGridView dgvPapaveis;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome;
     }
 }
