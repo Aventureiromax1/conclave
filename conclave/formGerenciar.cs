@@ -62,5 +62,29 @@ namespace conclave
             txtNome.Text = "";
             atualizar();
         }
-    }
+
+        private void BtnRemove_Click(object sender, EventArgs e)
+        {
+			if(dgvPapaveis.SelectedCells.Count == 0)
+
+			{
+				MessageBox.Show("Selecione um papável para excluir.");
+				return;
+			}
+
+			string nome = dgvPapaveis.SelectedCells[0].Value.ToString();
+			int indice = funcoes.buscar(papaveis, nome);
+
+			DialogResult r = MessageBox.Show($"Tem certeza que deseja excluir {papaveis[indice][0]}?", "Confirmação", MessageBoxButtons.YesNo);
+			if (r == DialogResult.Yes)
+			{
+				for (int i = indice; i < funcoes.Length(papaveis) - 1; i++)
+				{
+					papaveis[i] = papaveis[i + 1];
+				}
+				papaveis[funcoes.Length(papaveis) - 1] = null;
+
+				atualizar();
+			}
+		}
 }
